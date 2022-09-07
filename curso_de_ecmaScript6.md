@@ -14,14 +14,16 @@
 ### 6.Las Arrows Functions fueron incorporadas en:
   	ES6
 ### 7.Identifica la "Promesa" entre los siguientes bloques de código:
-	Promise((resolve, reject) => { 
-		if (true) { 
-			resolve('Hey!'); 
-		} else { 
-			reject('Whooops!'); 
-		} 
-	}); 
+	const promesa = () => {
+  return new Promise((resolve, reject) => {
+    if (something) {
+      resolve("Se ha resuelto la promesa");
+    } else {
+      reject("Se ha rechazado la promesa");
+    }
+  });
 };
+
 ### 8.¿Cuál es la forma correcta de exportar un módulo en ES6?
 	export default functionName;
 ### 9.En un generator utilizamos "next" para:
